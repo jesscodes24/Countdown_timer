@@ -45,4 +45,8 @@ body {
     width: 45vw;
     border-radius: 0.5vw;
   }
+
+  @media screen {
+    
+  }
 }
