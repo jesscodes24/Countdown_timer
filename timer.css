@@ -1,3 +1,6 @@
+:root {
+  font-size: calc(10px + 0.390625vw);
+}
 body {
   background-color: #000000;
   color: white;
@@ -7,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: calc(1vw + 30px);
     padding: 3vw;
     .flex {
       width: 50%;
@@ -42,11 +45,19 @@ body {
     color: #0c0c0c;
   }
   .image {
-    width: 45vw;
+    width: 30rem;
+    max-width: 95%;
     border-radius: 0.5vw;
   }
 
-  @media screen {
-    
+  @media screen and (max-width: 920px) {
+    .each_position {
+      flex-direction: column;
+      .flex {
+        min-width: 250px;
+        width: 80%;
+        padding: 2vw;
+      }
+    }
   }
 }
